@@ -47,6 +47,8 @@ The API will be available at http://127.0.0.1:8000/api/.
 * Vendor Performance: /api/vendors/{vendor_id}/performance/
 
 ### Token Authentication:
+To use authenticated endpoints, obtain a token by sending a POST request to:
+```python manage.py drf_create_token {user_name}```
 
 To use authenticated endpoints, obtain the data:
 ```http "http://127.0.0.1:8000/api/vendors/1/" "Authorization: Token {your_token}" ```
