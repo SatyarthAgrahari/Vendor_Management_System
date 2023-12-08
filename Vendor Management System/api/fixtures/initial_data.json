@@ -1,0 +1,44 @@
+[
+    {
+        "model": "api.vendor",
+        "pk": 1,
+        "fields": {
+            "name": "Vendor1",
+            "contact_details": "Contact details for Vendor1",
+            "address": "Address for Vendor1",
+            "vendor_code": "V1",
+            "on_time_delivery_rate": 95.0,
+            "quality_rating_avg": 4.5,
+            "average_response_time": 24.0,
+            "fulfillment_rate": 98.0
+        }
+    },
+    {
+        "model": "api.purchaseorder",
+        "pk": 1,
+        "fields": {
+            "po_number": "PO1",
+            "vendor": 1,
+            "order_date": "2023-01-01T10:00:00Z",
+            "delivery_date": "2023-01-10T12:00:00Z",
+            "items": {"item1": "description1", "item2": "description2"},
+            "quantity": 10,
+            "status": "completed",
+            "quality_rating": 4.0,
+            "issue_date": "2023-01-11T14:00:00Z",
+            "acknowledgement_date": "2023-01-12T16:00:00Z"
+        }
+    },
+    {
+        "model": "api.historicalperformance",
+        "pk": 1,
+        "fields": {
+            "vendor": 1,
+            "date": "2023-01-15T18:00:00Z",
+            "on_time_delivery_rate": 96.0,
+            "quality_rating_avg": 4.7,
+            "average_response_time": 22.0,
+            "fulfillment_rate": 97.5
+        }
+    }
+]
