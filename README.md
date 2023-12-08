@@ -23,8 +23,39 @@ git clone https://github.com/SatyarthAgrahari/Vendor_Management_System.git
 
    ```bash
 cd vendor_management_system
-3.Create a virtual environment
+3. Create a virtual environment:
 
    ```bash
 vitualenv myvenv
+4. Activate the virtual environment:
+
+   ```bash
+.\myvenv\Scripts\activate
+5. Install dependencies:
+
+   ```bash
+pip install -r requirements.txt
+6. Load initial data (optional):
+
+   ```bash
+python manage.py loaddata initial_data.json
+## Usage
+Run the development server:
+
+   ```bash
+python manage.py runserver
+The API will be available at http://127.0.0.1:8000/api/.
+### API Endpoints
+* Vendor Profiles: /api/vendors/
+* Purchase Orders: /api/purchase_orders/
+* Vendor Performance: /api/vendors/{vendor_id}/performance/
+### Token Authentication:
+To use authenticated endpoints, obtain the data:
+
+   ```bash
+http "http://127.0.0.1:8000/api/vendors/1/" "Authorization: Token {your_token}"
+
+
+
+
 
