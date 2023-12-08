@@ -19,3 +19,12 @@ Make sure you have the following software installed on your machine:
 
    ```bash
    git clone https://github.com/SatyarthAgrahari/Vendor_Management_System.git
+2. Change into the project directory:
+
+   ```bash
+   cd vendor_management_system
+3.Create a virtual environment
+
+   ```bash
+   vitualenv myvenv
+
