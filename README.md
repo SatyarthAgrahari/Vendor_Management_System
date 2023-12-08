@@ -22,7 +22,7 @@ Make sure you have the following software installed on your machine:
 ```cd vendor_management_system```
 
 3. Create a virtual environment:
-```vitualenv myvenv```
+```virtualenv myvenv```
 
 4. Activate the virtual environment:
 ```.\myvenv\Scripts\activate```
